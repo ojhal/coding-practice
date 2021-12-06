@@ -6,4 +6,4 @@ let h = (arr) => {
 }
 
 console.log((x < 10 || y > 1))
-console.log(h([1,2,3]))
+console.log(h([1,2,3,4,5]))
