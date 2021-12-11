@@ -21,4 +21,10 @@ function largestNum(arr){
   }
   console.log(largestNum([[1,4],[19,45]]))
   
-  
+  let numbers = [65, 44, 12, 4];
+let newArr = numbers.map(myFunction)
+
+function myFunction(num) {
+  return num * 10;
+}
+console.log(newArr)
