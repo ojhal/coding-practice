@@ -38,3 +38,10 @@ function chunkArrayInGroups(arr, size) {
   }
   
   console.log(chunkArrayInGroups(["a", "b", "c", "d"], 2));
+
+let a = Math.max(5, 10)
+console.log(a)
+
+const numberArr = [23, 122, 1, 23, 4, 56];
+const highest = Math.max(...numberArr);
+console.log(highest);
