@@ -6,3 +6,15 @@ for(var i=0; i < nums.length; i++){
 }
 //   alert(num)
 console.log(num)
+
+
+
+var numbers = [10, 42, 5, 87, 61, 34, 99],
+    i = numbers.length,
+    e = 0;
+
+while (i--) {
+    e += numbers[i]; 
+}
+
+console.log(e);
