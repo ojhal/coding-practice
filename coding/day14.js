@@ -7,3 +7,14 @@ function newList(alph, num) {
     return list;
     }
     console.log(newList(['a','b','c'],[1,2,3]));
+
+
+
+let numbers1 = [1000, 221 , 32, 36, 100, 280, 230 ];
+numbers1.sort((a,b) => {
+    if(a > b) return 1;
+    if(a < b) return -1;
+    return 0;
+});
+
+console.log(numbers1);
