@@ -38,9 +38,19 @@ console.log(Mrnum)
 var numbers = [1,2,3,4,5,6,7,8,9,10]
 var newNums = numbers.map((value)=>value*2)
 var newNumsFil = numbers.map((value)=>{
-  if(value % 2 === 0){
+  if(value % 2 === 0){//for getting the even number
     return value *2
   }
 }).filter((value)=>!isNaN(value))//with condition
 console.log(newNums)
+console.log(newNumsFil)
+
+var numbers = [1,2,3,4,5,6,7,8,9,10]
+var newNums = numbers.map((value)=>value*2)
+var newNumsFil = numbers.map((value)=>{
+  if(value % 2 === 1){//for getting the odd number
+    return value * 3
+  }
+}).filter((value)=>!isNaN(value))
+// console.log(newNums)
 console.log(newNumsFil)
