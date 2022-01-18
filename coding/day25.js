@@ -27,3 +27,10 @@ var doubleNumbers = numbers.map(function(value,index,array){
   return(value * 4)
 })
 console.log(doubleNumbers)
+
+var num =["joy","toy","soy","hoy"]
+var Mrnum =[]
+for(let i=0; i<num.length; i++){//via for loop
+  Mrnum.push(`Mr ${num[i]}`)
+}
+console.log(Mrnum)
