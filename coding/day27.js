@@ -28,3 +28,11 @@ function func1(a, b, c) {
   
   }
   func1(50);
+  //Object.values(obj)
+  const object1 = {
+    a1: 'ojhal',
+    b2: 47,
+    c3: true
+  };
+  
+  console.log(Object.values(object1));
