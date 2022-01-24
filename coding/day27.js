@@ -20,4 +20,11 @@ function func1(a, b, c) {
     console.log (args[1])
   }
   foo(1, 2, 3)
+
+  function func1(a) {
+    a=5
+    console.log(arguments[0])//updating a also updates arguments[0]
+
   
+  }
+  func1(50);
