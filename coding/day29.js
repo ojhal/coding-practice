@@ -27,3 +27,15 @@ do{
   k++;
 }
 while (k < 10)
+
+var k = 1
+do{
+  
+  if(k===5){
+    k+=1
+    continue
+  }
+  console.log(k+1);
+  k++;
+}while (k < 10)
+  console.log("done")
