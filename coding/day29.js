@@ -17,3 +17,13 @@ do{
   k++;
 }
 while (k < 10)
+
+//break/continue
+var k = 0
+do{
+  console.log(k);
+  if(k===5)
+    break
+  k++;
+}
+while (k < 10)
