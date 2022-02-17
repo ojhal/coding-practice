@@ -56,3 +56,19 @@ class MyApp extends React.Component {
       );
     }
   };
+//Use the Lifecycle Method componentWillMount
+  class MyComponent extends React.Component {
+    constructor(props) {
+      super(props);
+    }
+    componentWillMount() {
+      // Change code below this line
+  console.log('Component being mounted')
+      // Change code above this line
+    }
+    render() {
+      return (
+        <div><h1>"ojhal"</h1></div>
+        )
+    }
+  };
