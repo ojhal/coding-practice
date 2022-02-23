@@ -21,3 +21,12 @@ class MyComponent extends React.Component {
       );
     }
   };
+  //&&
+
+let state = false // Here
+
+function test() {
+  return "test"
+}
+
+console.log(state && test()) // test
