@@ -67,3 +67,11 @@ const obj = {
 // const obj1 = {...obj,favLang: "react",name:"ojhal"}
 const {name,class1,favLang} = obj
 console.log(name,class1,favLang)
+
+
+console.log("john is a good boy")
+setTimeout(()=>{
+  console.log("settime out")
+}, 5000)
+
+console.log("john is a bad boy")
