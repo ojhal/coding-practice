@@ -36,3 +36,9 @@ console.log("befor remove", mySet.has("john"))
 for(let item of mySet){
     console.log("this is set:", item)
   }
+
+
+//use forEach
+mySet.forEach((item)=>{
+    console.log("this is set:", item)
+  })
