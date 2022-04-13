@@ -30,3 +30,9 @@ console.log("befor remove", mySet.has("john"))
 console.log(mySet.delete("john"))
 console.log("after remove", mySet.size)
 console.log("befor remove", mySet.has("john"))
+
+//Iterating a set
+
+for(let item of mySet){
+    console.log("this is set:", item)
+  }
