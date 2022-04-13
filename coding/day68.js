@@ -42,3 +42,7 @@ for(let item of mySet){
 mySet.forEach((item)=>{
     console.log("this is set:", item)
   })
+
+  //convert the set to array
+  const mySet = new Set(['john',123,"this",{a:4,b:8}])
+  console.log( Array.from(mySet))
