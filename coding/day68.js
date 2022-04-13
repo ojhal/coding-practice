@@ -53,3 +53,10 @@ mySet.forEach((item)=>{
 // const array = [...set]; // or Array.from(set)
 const array = Array.from(set)
 console.log(array)
+//with add
+let mySet = new Set()
+mySet.add(1)
+mySet.add(5)
+mySet.add(5) 
+let arr = [...mySet ]
+console.log(arr)
