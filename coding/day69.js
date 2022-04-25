@@ -6,4 +6,13 @@ function sum() {
     dp();
   }
   sum();
-  
+  //arrow function
+
+  sum = () =>{
+    var name = 'Mozilla'; 
+    dp = () =>{
+        alert(name)
+    }
+    dp()
+  }
+  sum()
