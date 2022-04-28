@@ -60,3 +60,8 @@ mySet.add(5)
 mySet.add(5) 
 let arr = [...mySet ]
 console.log(arr)
+
+//self
+const arr1 = ["ojhal",123,"this","this","that"]
+const arr = new Set([...arr1])
+console.log(Array.from(arr))
