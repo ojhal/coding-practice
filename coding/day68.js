@@ -65,3 +65,11 @@ console.log(arr)
 const arr1 = ["ojhal",123,"this","this","that"]
 const arr = new Set([...arr1])
 console.log(Array.from(arr))
+
+const arr1 = ["ojhal",123,"this","this","that"]
+const arr = new Set([...arr1])
+console.log(arr.has("this1"))
+{Array.from(arr).map((e,i)=>{
+//   console.log(e,i)
+}) 
+}
