@@ -18,3 +18,11 @@ function(){
   console.log(3)
 },0);
 console.log(4);
+//interview quetion
+function x(){
+    setTimeout (function(){
+      console.log(i)
+    },1000)
+      var i = 1;
+  }
+  x()
