@@ -20,3 +20,13 @@ switch(day){
   default:
     console.log("enter the valid day")
 }
+const age = 20
+
+if(age>=25 || age<=22){
+  console.log("yes u r eligible")
+}
+const age = 20
+
+if(age>=25 && age<=22){
+  console.log("yes u r eligible")
+}
