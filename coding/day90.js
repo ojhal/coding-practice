@@ -15,7 +15,7 @@ const App = () => {
           }
         }}
       />
-      <Text>{counter}</Text>
+      <Text>{counter}</Text>//addded
     </>
   );
 };
