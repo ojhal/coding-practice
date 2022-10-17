@@ -15,3 +15,12 @@ console.log(x)
 let y = [...x];
 console.log("Clone of the said array:")
 console.log(y)
+
+//17/10/22
+const hour = new Date().getHours(); 
+
+if(hour < 18){
+  console.log("gm")
+}else if(hour > 18){
+  console.log("gn")
+}
