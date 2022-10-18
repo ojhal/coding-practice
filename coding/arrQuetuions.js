@@ -24,3 +24,8 @@ if(hour < 18){
 }else if(hour > 18){
   console.log("gn")
 }
+//18/10/22
+const FCC = "freeCodeCamp"; // Change this line
+let fact = "is cool!"; // Change this line
+fact = "is awesome!";
+console.log(FCC, fact);
