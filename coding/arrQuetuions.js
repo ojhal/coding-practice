@@ -39,3 +39,7 @@ let c = 12;
 a += 12;
 b +=  9;
 c +=  7;
+
+//20/10/22
+let myStr = "This is the first sentence. ";
+myStr += "This is the second sentence.";
