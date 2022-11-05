@@ -43,3 +43,12 @@ c +=  7;
 //20/10/22
 let myStr = "This is the first sentence. ";
 myStr += "This is the second sentence.";
+
+//5/11/22
+const data = new Promise(function(resolve,reject){
+    setTimeout (function(){
+      resolve ("new state")
+      
+    },2000)
+  })
+  console.log(data)
