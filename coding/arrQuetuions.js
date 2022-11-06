@@ -52,3 +52,13 @@ const data = new Promise(function(resolve,reject){
     },2000)
   })
   console.log(data)
+
+  //6/11/22
+
+  let promise = new Promise(function(resolve, reject) {
+    resolve(1);
+  
+    setTimeout(() => resolve(2), 1000);
+  });
+  
+  promise.then(alert);
