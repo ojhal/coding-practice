@@ -62,3 +62,18 @@ const data = new Promise(function(resolve,reject){
   });
   
   promise.then(alert);
+
+  //
+  console.log("start")
+
+const p = new Promise((resolve,reject) => {
+  setTimeout(() => {
+             resolve("1")
+             },2000)
+})
+
+p.then((p) =>{
+       console.log(p)
+       })
+
+console.log("End")
