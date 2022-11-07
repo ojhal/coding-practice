@@ -77,3 +77,20 @@ p.then((p) =>{
        })
 
 console.log("End")
+
+//7/11/22
+
+console.log("start")
+
+const p = new Promise((resolve,reject) => {
+  setTimeout(() => {
+//              resolve("1")
+                 reject(1)
+             },2000)
+})
+
+p.then((p) =>{
+       console.log(p)
+       }).catch(err => console.log("not found"))
+
+console.log("End")
