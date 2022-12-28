@@ -257,3 +257,54 @@ const amount = Number.parseInt(str.slice(15))
 console.log(typeof amount)
 
 //Note string is immutable
+
+
+
+//arraty methods
+
+let array = [1, 2, 3, 44, null, "number"]
+console.log(typeof array)
+let array1 = [10, 20, 30, 40, 50, 60, 70, 80, 90]
+for (let i = 0; i < array1.length; i++) {
+  console.log(array1[i])
+}
+
+let num = [2, 4, 56, 5, 7, 5]
+let b = num.toString()
+console.log(b)
+let c = num.join("_")
+console.log(c, typeof c)
+let d = num.pop()
+console.log(num, d)
+let d1 = num.push(99)
+console.log(num, d1)
+
+let d2 = num.shift()
+console.log(d2)
+console.log(num)
+
+let d22 = num.unshift(77)
+console.log(d22)
+console.log(num)
+
+delete num[0]
+console.log(num)
+
+let compare = (a,b) => {
+  return a - b 
+}
+let num_Less = [5552,443,4,444,1114,4115,22253]
+num_Less.sort(compare)
+console.log(num_Less)
+let num_more = [23,3,4,5,53,950,58]
+let num_even_more = [23,03,4333,3335,5343,950,58]
+
+let newArray = num_Less.concat(num_more,num_even_more)
+console.log(newArray)
+
+let splice = [25,50,75,100]
+splice.splice(2,3, 222,111,3333)
+console.log(splice)
+
+let new1 = splice.slice(2,3)
+  console.log(new1)
