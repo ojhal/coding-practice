@@ -308,3 +308,58 @@ console.log(splice)
 
 let new1 = splice.slice(2,3)
   console.log(new1)
+
+  //loops in array
+  let arr = [2,3,4,5,6]
+arr.forEach((ele)=>{
+  console.log(ele*ele)
+})
+
+let array = "ojhal"
+let a = Array.from(array)
+console.log(a)
+
+//for.....of
+
+for (let i of arr){
+  console.log(i)
+}
+
+//for....in
+
+
+for (let i in arr){ //for keys
+  console.log(arr[i])
+}
+//map method 
+
+// let newArr = [24,65,57,99]
+// let a1 = newArr.map((e,i)=>{
+//   console.log(e,i)
+//   return e + 1
+// })
+// console.log(a1)
+
+let newArr = [24,65,57,99]
+let a1 = newArr.forEach((e,i)=>{
+  console.log(e,i)
+  return e + 1
+})
+console.log(a1)
+
+//filter method
+
+let newArr1 = [20,10,03,34,5,2,3,1]
+let a2 = newArr1.filter((ele)=>{
+  return ele<10
+})
+console.log(a2)
+
+
+//reduce 
+
+let newArr2 = [1,2,3,4]
+let a3 = newArr2.reduce((h1,h2) =>{
+  return h1 * h2 
+})
+console.log(a3)
