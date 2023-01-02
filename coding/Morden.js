@@ -396,3 +396,38 @@ do {
 
 let score = 100 - chances; //To store the score of your game
 console.log("\nCongratulations🥳🥳\nThe number generated was", number + " and you guessed it right😁\nYour final score is", score);
+
+//  SEARCHING DOM
+
+// const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+
+// const alert = (message, type) => {
+//   const wrapper = document.createElement('div')
+//   wrapper.innerHTML = [
+//     `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+//     `   <div>${message}</div>`,
+//     '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+//     '</div>'
+//   ].join('')
+
+//   alertPlaceholder.append(wrapper)
+// }
+
+// const alertTrigger = document.getElementById('liveAlertBtn')
+// if (alertTrigger) {
+//   alertTrigger.addEventListener('click', () => {
+//     alert('Nice, you triggered this alert message!', 'success')
+//   })
+// }
+
+let ctitle = document.getElementById("firstClass")
+ctitle.style.color = "red"
+
+
+let ctitles = document.querySelectorAll(".card-title")
+ctitles[0].style.color = "red"
+ctitles[1].style.color = "blue"
+ctitles[2].style.color = "green"
+console.log(ctitles)
+
+document.querySelector(".this").style.color = "red"
