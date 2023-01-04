@@ -431,3 +431,16 @@ ctitles[2].style.color = "green"
 console.log(ctitles)
 
 document.querySelector(".this").style.color = "red"
+
+//setTimeout
+document.write("hello")
+  
+let a = setTimeout (function(){
+  alert("i am alert")
+}, 5000)
+let b = prompt("do you want run set time out??")
+  if("n" == b){
+    clearTimeout(a)
+  }
+
+console.log(a)
