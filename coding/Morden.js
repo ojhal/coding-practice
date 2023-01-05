@@ -444,3 +444,8 @@ let b = prompt("do you want run set time out??")
   }
 
 console.log(a)
+let sum = ( a,b) =>{
+  console.log("yes i am rinning" + (a+b))
+}
+
+setTimeout(sum, 2000, 1,2)
