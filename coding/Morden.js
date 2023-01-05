@@ -449,3 +449,10 @@ let sum = ( a,b) =>{
 }
 
 setTimeout(sum, 2000, 1,2)
+
+//setInterval
+let sum = (a, b) => {
+  console.log("yes i am rinning" + (a + b))
+}
+
+setInterval(sum, 2000, 1, 2)
