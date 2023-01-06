@@ -456,3 +456,22 @@ let sum = (a, b) => {
 }
 
 setInterval(sum, 2000, 1, 2)
+
+//addEventListener_removeEventListener
+let x = function(e) {
+  alert("hey")
+}
+let y = function(e) {
+  alert("hey there")
+}
+
+btn.addEventListener('click', x)
+
+
+btn.addEventListener('click', y)
+
+let a = prompt("what is ur fav number")
+
+if (a == "2") {
+  btn.removeEventListener('click', x)
+}
