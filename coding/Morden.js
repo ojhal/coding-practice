@@ -475,3 +475,14 @@ let a = prompt("what is ur fav number")
 if (a == "2") {
   btn.removeEventListener('click', x)
 }
+let x = function(e) {
+  console.log(e)
+  console.log(e.target)
+  console.log(e.target.value)
+  console.log(e.clientX, e.clientY)
+}
+// let y = function(e) {
+//   alert("hey there")
+// }
+
+btn.addEventListener('click', x)
