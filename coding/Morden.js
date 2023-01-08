@@ -490,5 +490,5 @@ btn.addEventListener('click', x)
 //clock
 setInterval(() =>{
   let d = new Date()
-  time.innerHTML = d
+  time.innerHTML = d //time is id
 }, 1000)
