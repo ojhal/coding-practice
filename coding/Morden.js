@@ -486,3 +486,9 @@ let x = function(e) {
 // }
 
 btn.addEventListener('click', x)
+
+//clock
+setInterval(() =>{
+  let d = new Date()
+  time.innerHTML = d
+}, 1000)
