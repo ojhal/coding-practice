@@ -492,3 +492,32 @@ setInterval(() =>{
   let d = new Date()
   time.innerHTML = d //time is id
 }, 1000)
+
+//Asyncronous
+// let a = prompt("what is your name")
+// let b = prompt("what is your age")
+// console.log(a + " is " + b + "year old" )
+
+
+//sycronous
+
+// console.log("start")
+// setTimeout(function() {
+//   console.log("hey john")
+// })
+// console.log("End")
+
+//Callbacks
+const loadScript = (src,callback) => {
+  let script = document.createElement('script')
+  script.src = src
+  script.onload = (() =>{
+    console.log("loaded script" + src)
+    callback();
+  })
+  document.body.appendChild(script)
+}
+const Hello = () =>{
+  alert("hello jii!!")
+}
+loadScript("https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js",Hello)
