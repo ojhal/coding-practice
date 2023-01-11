@@ -521,3 +521,16 @@ const Hello = () =>{
   alert("hello jii!!")
 }
 loadScript("https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js",Hello)
+
+//Promise
+let promise = new Promise((resolve,reject) => {
+  alert("i am alert in promise")
+  resolve(56)
+})
+  
+console.log("Hello one")
+setTimeout(()=>{
+  console.log("hello 2 in 2 seconds")
+},2000)
+console.log("my name is hello three")
+console.log(promise)
