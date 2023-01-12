@@ -600,3 +600,27 @@ p1.then((value)=>{
 p2.catch((error)=>{
   console.log("this is error occured")
 })
+
+//promise chaining
+let p1 = new Promise((resolve,reject)=>{
+  setTimeout(()=>{
+    console.log("resolved after 2 sec")
+    resolve(56)
+  },2000)
+})
+
+
+p1.then((value)=>{
+  console.log(value)
+  let p2 = new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+      resolve("promise two")
+    },2000)
+  })
+  return p2
+}).then((value)=>{
+  console.log("yes am second end")
+  return 2
+}).then((value)=>{
+  console.log("yes am end")
+})
