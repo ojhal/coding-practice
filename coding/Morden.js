@@ -541,8 +541,18 @@ let p = new Promise((resolve, reject)=>{
   console.log("promise is pending")
   setTimeout(()=>{
     console.log("I am fulfilled")
-    // resolve(true)
+    resolve(true)
     reject(new Error("I am an error"))
   },5000)
 })
 console.log(p)
+
+let p1 = new Promise((resolve, reject)=>{
+  console.log("promise is pending")
+  setTimeout(()=>{
+    console.log("I am rejected")
+    // resolve(true)
+    reject(new Error("I am an error"))
+  },5000)
+})
+console.log(p1)
