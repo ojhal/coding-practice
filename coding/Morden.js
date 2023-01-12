@@ -534,3 +534,15 @@ setTimeout(()=>{
 },2000)
 console.log("my name is hello three")
 console.log(promise)
+
+// catch/then-- promise
+
+let p = new Promise((resolve, reject)=>{
+  console.log("promise is pending")
+  setTimeout(()=>{
+    console.log("I am fulfilled")
+    // resolve(true)
+    reject(new Error("I am an error"))
+  },5000)
+})
+console.log(p)
