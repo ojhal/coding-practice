@@ -624,3 +624,19 @@ p1.then((value)=>{
 }).then((value)=>{
   console.log("yes am end")
 })
+
+//multiple handlers
+let p1 = new Promise ((resolve,reject) =>{
+  // alert("hey am not resolved")
+  setTimeout(()=>{
+    resolve(1)
+  },2000)
+})
+
+p1.then(()=>{
+  console.log("am resolved")
+})
+
+p1.then(()=>{
+  console.log("hurray")
+})
