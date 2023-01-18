@@ -728,3 +728,27 @@ async function harry(){
   console.log(a)
   a.then(d => console.log(d))
   console.log("last")
+//error handling try/catch
+  setTimeout(()=>{
+    console.log("hacking wifi... please wait....")
+  },1000)
+  
+  try{
+    console.log(rahul)
+  }
+  catch(error){
+    console.log("balle balle" + error)
+  }
+  setTimeout(()=>{
+    console.log("hacking users... please wait....")
+  },2000)
+  
+  
+  setTimeout(()=>{
+    console.log(" Loading.... please wait....")
+  },3000)
+  
+  
+  setTimeout(()=>{
+    console.log("fetching wifi password... please wait....")
+  },4000)
