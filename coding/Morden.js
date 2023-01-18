@@ -752,3 +752,12 @@ async function harry(){
   setTimeout(()=>{
     console.log("fetching wifi password... please wait....")
   },4000)
+  //Error object
+  try{
+    console.log(rahul)
+ }
+ catch(error){
+   console.log(error.name)
+   console.log(error.message)
+   console.log(error.stack)
+ }
