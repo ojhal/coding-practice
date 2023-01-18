@@ -713,3 +713,18 @@ async function harry(){
   
   }
   main1()
+  // async-await
+  const ojhal = async() => {
+    console.log("inside function")
+    const response = await fetch('https://api.github.com/users')
+    console.log("before response")
+    const users = await response.json()
+    console.log("uesers are here")
+    return users
+  }
+  console.log("start")
+  let a = ojhal()
+  console.log("mid")
+  console.log(a)
+  a.then(d => console.log(d))
+  console.log("last")
