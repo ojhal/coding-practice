@@ -685,3 +685,31 @@ let promise_all = Promise.race([p1,p2,p3])
 promise_all.then((value)=>{
   console.log(value)
 })
+//Async/Await
+async function harry(){
+  let dehliWeather = new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+      resolve("27 deg")
+    },1000)
+  })
+  
+  let rajWeather = new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+      resolve("22 deg")
+    },2000)
+  })
+    console.log("fetching dehli weather plz wait......")
+    let DW = await dehliWeather
+     console.log("fetching rajasthan weather plz wait......")
+    let RW = await rajWeather
+    return[DW,RW]
+  }
+  const cherry = async() => {
+    console.log("hey am cherry")
+  }
+  const main1 = async() =>{
+  let a = await harry()
+  let b = await cherry()
+  
+  }
+  main1()
