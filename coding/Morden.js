@@ -775,3 +775,14 @@ catch(error){
   console.log(error.stack)
 }
  console.log("running")
+//  finally
+try{
+  let a= 0
+  console.log(rahul)
+}
+catch(error){
+  console.log(error)
+}
+finally{
+  console.log("hey am run")
+}
