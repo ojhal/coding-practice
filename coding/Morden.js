@@ -796,7 +796,7 @@ p.then((value1) => {
   console.log(value2)
 })
 //post request
-const CreateTodo = async = () => {
+const CreateTodo = async () => {
   
   let options = {
     method: "POST",
