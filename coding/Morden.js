@@ -819,3 +819,12 @@ const CreateTodo = async () => {
     console.log(todo)
   }
   mainFunc()
+//js_cookie
+  console.log(document.cookie)
+document.cookie= "name2=ojhal011000022"
+document.cookie= "name=ojhal0110000"
+document.cookie= "name=ojhal"
+let key = prompt("enter your key")
+let value = prompt("enter your age")
+document.cookie = `${encodeURIComponent(key)}=${encodeURIComponent(value)}`
+console.log(document.cookie)
