@@ -828,3 +828,12 @@ let key = prompt("enter your key")
 let value = prompt("enter your age")
 document.cookie = `${encodeURIComponent(key)}=${encodeURIComponent(value)}`
 console.log(document.cookie)
+
+//localStorage
+
+let key = prompt("enter key you wanna set")
+let value = prompt("enter value you wanna set")
+
+localStorage.setItem(key, value)
+
+console.log(`the value of ${key} is ${localStorage.getItem(key)}`)
