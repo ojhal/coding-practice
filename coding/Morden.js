@@ -889,3 +889,33 @@ harryForm.submit()
 rohanForm1.submit()
 rohanForm2.submit()
 rohanForm1.cancel()
+
+
+// generate password
+class Password {
+  constructor() {
+    console.log("welcome to password generator")
+    this.pass = ""
+  }
+  generatePassword(len) {
+    let numbers = "1234567890"
+    let charcs = "!@#$%^&*()"
+    let specialChar = "abcdefghijklmnopqurstuvwxyz"
+    if (len < 3) {
+      console.log("your password atleast 3 charactors long")
+    }
+    else {
+      let i = 0
+      while (i < len) {
+        this.pass += charcs[Math.floor(Math.random() * charcs.length)]
+        this.pass += numbers[Math.floor(Math.random() * numbers.length)]
+        this.pass += specialChar[Math.floor(Math.random() * specialChar.length)]
+      }
+      this.pass = this.pass.substr(0, len)
+      return this.pass
+    }
+  }
+}
+
+let p = new Password()
+console.log(p.generatePassword(4))
