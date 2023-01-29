@@ -960,3 +960,10 @@ let arr = [1,2,3,4,5,6,7,8,9,0]
 let arr1 = [10,22,33,44]
 let obj = {...arr1}
 console.log(obj)
+
+
+
+function sum(v1,v2,v3){
+  return v1+v2+v3
+}
+console.log(sum(...arr1))
