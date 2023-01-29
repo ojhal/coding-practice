@@ -936,4 +936,4 @@ let a = () => {
   console.log(c)
   let d = await a()
   console.log(d)
-})()
+})()// annonymous function
