@@ -937,3 +937,26 @@ let a = () => {
   let d = await a()
   console.log(d)
 })()// annonymous function
+
+//destructing and spraed oprator
+let arr = [1,2,3,4,5,6,7,8,9,0]
+// let [a,b,c,d, ...rest] = arr
+//no need to do this
+// let a = arr[0]
+// let b = arr[1]
+// console.log(a,b,c,d,rest)
+
+
+// let [a, , ,d, ...rest] = arr
+// console.log(a,rest)
+
+
+// let {a,b} = {a:1 , b:2}
+// console.log(a,b)
+
+
+//spraed opratoe
+
+let arr1 = [10,22,33,44]
+let obj = {...arr1}
+console.log(obj)
