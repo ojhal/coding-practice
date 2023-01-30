@@ -1025,3 +1025,17 @@ a()
 // arrow function rivised
 const sayHello = (name,greeting) => console.log(greeting + " " + name)
 sayHello("jay","good noon")
+
+const x = {
+  name: "john",
+  experience: 30,
+  role: "engeenier",
+  show: function() {
+    let that = this
+    console.log(this)
+    setTimeout(function() {
+      console.log(`${that.name}\n ${that.role}`)
+    }, 2000)
+  }
+}
+x.show()
