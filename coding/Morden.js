@@ -1019,3 +1019,9 @@ function returnFunc() {
 
 let a = returnFunc()
 a()
+
+
+
+// arrow function rivised
+const sayHello = (name,greeting) => console.log(greeting + " " + name)
+sayHello("jay","good noon")
