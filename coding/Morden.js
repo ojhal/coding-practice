@@ -984,3 +984,16 @@ var a = 9; // declaration hoisted to the top but initialization is not
 console.log(a)
 
 // function expressions are not hoisted
+
+//Closures
+function init() {
+  var name = 'Mozilla'; // name is a local variable created by init
+  function displayName() {
+    // displayName() is the inner function, that forms the closure
+    console.log(name); // use variable declared in the parent function
+  }
+  name = "john"
+  return displayName;
+}
+let a = init();
+a()
