@@ -1031,10 +1031,13 @@ const x = {
   experience: 30,
   role: "engeenier",
   show: function() {
-    let that = this
-    console.log(this)
-    setTimeout(function() {
-      console.log(`${that.name}\n ${that.role}`)
+    // let that = this
+    // console.log(this)
+    // setTimeout(function() {
+    //   console.log(`${that.name}\n ${that.role}`)
+    // }, 2000)
+    setTimeout(() => {
+      console.log(`${this.name}\n ${this.role}`)
     }, 2000)
   }
 }
