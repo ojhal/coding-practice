@@ -967,3 +967,20 @@ function sum(v1,v2,v3){
   return v1+v2+v3
 }
 console.log(sum(...arr1))
+
+
+// Hoisting
+
+console.log(a)
+greet()
+// function greet() {
+//   console.log("hey good morning")
+// }
+
+const greet = () => {
+  console.log("hey good morning")
+}
+var a = 9; // declaration hoisted to the top but initialization is not
+console.log(a)
+
+// function expressions are not hoisted
