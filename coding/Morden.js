@@ -1042,3 +1042,9 @@ const x = {
   }
 }
 x.show()
+
+
+//regular expression
+const regex = /very/g
+const text = "hey u r very very very beautiful so very pretty"
+console.log(text.replace(regex,"VERY"))
